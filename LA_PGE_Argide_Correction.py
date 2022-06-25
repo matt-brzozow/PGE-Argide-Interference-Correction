@@ -3,7 +3,6 @@
 #####################################################################################################
 
 import streamlit as st
-st.set_page_config(layout="wide")
 import pandas as pd
 import numpy as np
 
@@ -11,9 +10,7 @@ import numpy as np
 # Title
 #####################################################################################################
 
-
-
-st.set_page_config(page_title = "PGE-Argide Interference Correction")
+st.set_page_config(page_title = "PGE-Argide Interference Correction", layout="wide")
 st.title("PGE-Argide Interference Correction")
 
 st.write("-------------")
