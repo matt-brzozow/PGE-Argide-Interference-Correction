@@ -12,6 +12,7 @@ import numpy as np
 
 st.set_page_config(page_title = "PGE-Argide Interference Correction", layout="wide")
 st.title("PGE-Argide Interference Correction")
+st.write("Contact Information: Matthew Brzozowski | matt.brzozow@gmail.com")
 
 st.write("-------------")
 st.write("")
