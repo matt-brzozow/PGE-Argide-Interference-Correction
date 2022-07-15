@@ -26,7 +26,7 @@ st.subheader("Important - Read First")
 with st.expander(label = "Important - Read First"):
 
     st.subheader("Data format")
-    st.write("PGE, Cu, and Zn data need to be in the following format --> Cu63, Cu65, Zn66, Zn68, Rh103, Pd105, Pd106, Pd108 (same format for all other elements as well)")
+    st.write("Cu, Zn, Rh, and Pd data need to be in the following format --> Cu63, Cu65, Zn66, Zn68, Rh103, Pd105, Pd106, Pd108 (same format for all other elements as well)")
     st.write("The file uploader removes the first 3 rows (the header information) from the csv. If the elements are on row 1 of the CSV, add 3 rows above them (i.e., elements start on row 4).")
     
     st.subheader("Interferences corrected:")
