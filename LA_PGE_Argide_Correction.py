@@ -28,6 +28,8 @@ with st.expander(label = "Important - Read First"):
     st.subheader("Data format")
     st.write("Cu, Zn, Rh, and Pd data need to be in the following format --> Cu63, Cu65, Zn66, Zn68, Rh103, Pd105, Pd106, Pd108 (same format for all other elements as well)")
     st.write("The file uploader removes the first 3 rows (the header information) from the csv. If the elements are on row 1 of the CSV, add 3 rows above them (i.e., elements start on row 4).")
+    st.write("After correcting for interferences, you need to copy/paste the header information (first 3 rows) from your raw CSV files into the corrected CSV file. This information is needed for Iolite to read the data.")
+
     
     st.subheader("Interferences corrected:")
     st.write("Cu63Ar40 --> Rh103")
@@ -41,6 +43,7 @@ with st.expander(label = "Important - Read First"):
     st.write("These can be corrected for by applying a correction factor to concentrations determined on Pd106 and Pd108.")
     st.write("Pd106 --> Pd106_ppm - (0.043 * Cd_ppm)")
     st.write("Pd108 --> Pd108_ppm - (0.034 * Cd_ppm)")
+
 
 st.write("")
 
