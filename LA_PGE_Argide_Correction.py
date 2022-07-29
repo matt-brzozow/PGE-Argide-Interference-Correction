@@ -106,7 +106,7 @@ if uploaded_file is not None:
 
     @st.cache
     def convert_df(df):
-        return df.to_csv().encode("utf-8")
+        return df.to_csv(index = False).encode("utf-8")
 
     corrected_data_download = convert_df(data)
     st.download_button(label = "Download corrected data", data = corrected_data_download, file_name = file_name, mime = "text/csv")
